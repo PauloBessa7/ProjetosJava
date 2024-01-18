@@ -12,5 +12,3 @@
 
 - Sinta-se à vontade para abrir issues ou pull requests se você tiver sugestões, correções ou insights adicionais para compartilhar.
 - Se você também está seguindo o mesmo curso ou está interessado no aprendizado de Java, este repositório pode servir como um recurso valioso para compartilhar experiências e dicas.
-
-# Imagens
