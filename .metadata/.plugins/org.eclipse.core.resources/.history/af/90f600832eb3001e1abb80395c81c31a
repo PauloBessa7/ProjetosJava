@@ -1,0 +1,31 @@
+
+public class teste {
+
+	public static void main(String[] args) {
+		String texto = "Hey fellow warriors";
+		String texto1 = "Hey fellow warriors";
+		String texto2 = "Hey fellow warriors";
+		int cinco = 0 ;
+//		for (char letra : texto.toCharArray()) {
+//			if(letra==' '){
+//				cinco = 0;
+//			}else {
+//				cinco++;
+//				if(cinco==5) {
+//					
+//				}
+//			}
+//		}
+		for(int i = 0; i<texto.length();i++) {
+			if(texto.charAt(i+1)==' ' && cinco>=5){
+				char inverte = ' ';
+				for(int a = cinco ; a>1 ; a--) {
+					inverte=texto.charAt(i-a);
+				}
+			}else if(texto.charAt(i)!=' '){
+				cinco++;
+			}
+		}
+	}
+
+}

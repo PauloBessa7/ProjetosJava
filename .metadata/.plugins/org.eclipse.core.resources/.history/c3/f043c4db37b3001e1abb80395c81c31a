@@ -1,0 +1,17 @@
+
+public class teste {
+
+	public static void main(String[] args) {
+		String text = "camel";
+		String i = text.toUpperCase();
+		String volta = "";
+		for(int a = 0; a<text.length();a++) {
+			if(text.charAt(a)==i.charAt(a)) {
+				volta+=' ';
+			}
+			volta+=text.charAt(a);
+		}
+		System.out.println(volta);
+	}
+
+}

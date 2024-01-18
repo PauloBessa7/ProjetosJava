@@ -1,0 +1,19 @@
+package application;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+
+import entities.Departamento;
+import entities.HoraContrato;
+import entities.Senioridade;
+import entities.Trabalhador;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

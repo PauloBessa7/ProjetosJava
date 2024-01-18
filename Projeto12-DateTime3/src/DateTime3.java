@@ -1,0 +1,44 @@
+import java.time.Duration;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+
+public class DateTime3 {
+
+	public static void main(String[] args) {
+		LocalDate d4 = LocalDate.parse("2024-01-11");
+		LocalDateTime d5 = LocalDateTime.parse("2024-01-11T01:30:26");
+		Instant d6 = Instant.parse("2024-01-11T01:30:26Z");
+		
+		LocalDateTime d1 = LocalDateTime.ofInstant(d6, ZoneId.systemDefault());
+		LocalDateTime d2 = LocalDateTime.ofInstant(d6, ZoneId.of("Portugal"));
+		
+		
+		DateTimeFormatter f1 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		
+		
+//		System.out.println(d1.format(f1));
+//		System.out.println(d2.format(f1));
+//		
+//		System.out.println(d4.getDayOfMonth());
+//		System.out.println(d4.getMonthValue());
+//		System.out.println(d4.getYear());
+		
+		LocalDate lestWeek = d4.minusDays(7);
+		LocalDate nextWeek = d4.plusDays(7);
+		
+		LocalDateTime LestWeek = d5.minusDays(7);
+		LocalDateTime NextWeek = d5.plusDays(7);
+		
+		Duration t1 = Duration.between(LestWeek, NextWeek);
+				
+		System.out.println(d4+" < "+lestWeek);
+		System.out.println(d4+" > "+nextWeek);
+		System.out.println(d5+" < "+LestWeek);
+		System.out.println(d5+" > "+NextWeek);
+		System.out.println(d5+" --- "+NextWeek+" ---> Duarção de dias "+t1.toDays());
+	}
+
+}

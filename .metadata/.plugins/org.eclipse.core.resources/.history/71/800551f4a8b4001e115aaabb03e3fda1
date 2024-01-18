@@ -1,0 +1,35 @@
+package application;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.printf("Enter department`s name: ");
+		String department = sc.next();
+		System.out.println("Enter the worker data: ");
+		System.out.printf("name: ");
+		String name = sc.next();
+		System.out.printf("Level: ");
+		String level = sc.next();
+		System.out.printf("Base salary: ");
+		double baseSalary =sc.nextDouble();
+		sc.close();
+		
+		System.out.printf("How many contracts to this worker? ");
+		int num_contracts = sc.nextInt();
+		for(int a = 0 ; a<num_contracts;a++) {
+			System.out.println("Enter contract #"+(a+1)+" data: ");
+			System.out.printf("Date: (dd/MM/yyyy): ");
+			String date = sc.next();
+			System.out.printf("Value per hour ");
+			double valuePerHour = sc.nextDouble();
+			System.out.printf("Duration : ");
+			int hour = sc.nextInt();
+		}
+
+	}
+
+}

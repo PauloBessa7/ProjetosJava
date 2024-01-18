@@ -1,0 +1,18 @@
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+
+public class DateTime3 {
+
+	public static void main(String[] args) {
+		LocalDate d4 = LocalDate.parse("2024-01-11");
+		LocalDateTime d5 = LocalDateTime.parse("2024-01-11T01:30:26");
+		Instant d6 = Instant.parse("2024-01-11T01:30:26Z");
+		
+		LocalDate d1 = LocalDate.ofInstant(d6, ZoneId.systemDefault());
+		
+		System.out.println(d1);
+	}
+
+}
